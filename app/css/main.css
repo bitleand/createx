@@ -83,7 +83,7 @@ b, strong {
   font-weight: bolder;
 }
 
-button, input {
+button {
   background-color: transparent;
   display: inline-block;
   font-family: inherit;
@@ -100,6 +100,7 @@ button {
 
 input {
   -webkit-appearance: none;
+  outline: none;
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
@@ -194,7 +195,7 @@ body {
 }
 
 .section__offset {
-  padding: 120px 0;
+  padding: 120px 0 0;
 }
 
 .nav__list {
@@ -307,6 +308,7 @@ body {
 
 .btn {
   text-transform: uppercase;
+  border-color: transparent;
   border-style: solid;
   border-radius: 4px;
   border-width: 1px;
@@ -323,6 +325,9 @@ body {
 }
 .btn--fill-primary {
   border-color: #ff5a30;
+}
+.btn--fill-form {
+  padding: 12px 29px;
 }
 .btn--stroke {
   padding: 16px 36px;
@@ -468,5 +473,76 @@ body {
 }
 .mission-item--comfort {
   background-image: url("../img/comfort.svg");
+}
+
+.services {
+  padding-top: 212px;
+  background-image: url("../img/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.form-field--big {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.form-field__caption {
+  color: #424551;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-field__caption:not(:last-child) {
+  margin-bottom: 8px;
+}
+.form-field__input {
+  width: 228px;
+  height: 42px;
+  padding: 0 15px;
+  border-radius: 4px;
+  border: 1px solid #d7dadd;
+}
+.form-field__input--big {
+  width: 382px;
+}
+.form-know {
+  top: 92px;
+  position: relative;
+  margin-right: 24px;
+  padding: 48px 60px;
+  -webkit-box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 4px 4px -4px rgba(30, 33, 44, 0.03);
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+.form-know__title {
+  color: #1e212c;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.form-know__title:not(:last-child) {
+  margin-bottom: 32px;
+}
+.form-know__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 /*# sourceMappingURL=main.css.map */

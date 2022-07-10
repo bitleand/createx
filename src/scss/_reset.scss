@@ -48,7 +48,7 @@ b, strong {
   font-weight: bolder;
 }
 
-button, input {
+button {
   background-color: transparent;
   display: inline-block;
   font-family: inherit;
@@ -64,6 +64,7 @@ button {
 
 input {
   -webkit-appearance: none;
+  outline: none;
   appearance: none;
   border-radius: 0;
   border: 0;
