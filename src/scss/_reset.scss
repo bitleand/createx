@@ -1,0 +1,96 @@
+html {
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 16px;
+  min-width: 320px;
+  min-height: 100%;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+hr {
+  box-sizing: content-box;
+  overflow: visible;
+  height: 0;
+}
+
+details, legend {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+button, input {
+  background-color: transparent;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+img, svg, video {
+  display: inline-block;
+  vertical-align: top;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+}
