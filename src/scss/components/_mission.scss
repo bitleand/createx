@@ -1,0 +1,64 @@
+.mission {
+  background-color: $white;
+
+  &__list {
+    --mission-gap: 94px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &-item {
+    position: relative;
+    text-align: center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 70px;
+
+    &:not(:last-child) {
+      &:after {
+        content: '';
+        position: absolute;
+        right: calc((-1 * var(--mission-gap)));
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-image: url('../img/divider.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 700;
+      font-size: 20px;
+      color: $black;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__text {
+      line-height: 160%;
+      font-weight: 400;
+      font-size: 16px;
+      color: $gray;
+    }
+
+    &--quality {
+      background-image: url('../img/quality.svg');
+    }
+
+    &--safety {
+      background-image: url('../img/safety.svg');
+    }
+
+    &--comfort {
+      background-image: url('../img/comfort.svg');
+    }
+  }
+}

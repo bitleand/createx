@@ -414,4 +414,59 @@ body {
   height: 20px;
   fill: #ffffff;
 }
+
+.mission {
+  background-color: #ffffff;
+}
+.mission__list {
+  --mission-gap: 94px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--mission-gap) * 2);
+}
+.mission-item {
+  position: relative;
+  text-align: center;
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 70px;
+}
+.mission-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: calc(-1 * var(--mission-gap));
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-image: url("../img/divider.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mission-item__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1e212c;
+}
+.mission-item__subtitle:not(:last-child) {
+  margin-bottom: 10px;
+}
+.mission-item__text {
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 16px;
+  color: #424551;
+}
+.mission-item--quality {
+  background-image: url("../img/quality.svg");
+}
+.mission-item--safety {
+  background-image: url("../img/safety.svg");
+}
+.mission-item--comfort {
+  background-image: url("../img/comfort.svg");
+}
 /*# sourceMappingURL=main.css.map */
