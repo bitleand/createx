@@ -1,0 +1,23 @@
+@import "../mixins";
+
+.hero {
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--home {
+    background-color: $gray;
+  }
+
+  &-content {
+    padding-top: 217px;
+    max-width: 630px;
+
+    &__title {
+      &--orange {
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.btn {
+  text-transform: uppercase;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+
+  &__text {
+    color: $white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  &--fill {
+    background-color: $orange;
+    padding: 16px 36px;
+
+    &-primary {
+      border-color: $orange;
+    }
+  }
+
+  &--stroke {
+    padding: 16px 36px;
+
+    &-white {
+      border-color: $white;
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}
