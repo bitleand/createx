@@ -6,7 +6,7 @@
   background-size: cover;
 
   &-list {
-    gap: 30px;
+    gap: $gridGap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
