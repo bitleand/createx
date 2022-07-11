@@ -4,4 +4,101 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &-list {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__item {
+      position: relative;
+      border: 1px solid $grayAthens;
+      box-shadow: $boxShadowBlack;
+      background-color: $white;
+      border-radius: 4px;
+    }
+  }
+
+  &-item {
+    @include flex-column-center;
+
+    padding: 90px 10px;
+
+    &__content {
+      text-align: center;
+      z-index: 10;
+    }
+
+    &__img {
+      width: 52px;
+      height: 52px;
+      fill: $orange;
+      object-fit: cover;
+    }
+
+    &__subtitle {
+      margin-top: 25px;
+      font-weight: 700;
+      font-size: 20px;
+      color: $black;
+    }
+
+    &:before {
+      content: "";
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      background-image: url('../img/services-item-bg.jpg');
+      opacity: 0;
+      transition : opacity 0.3s ease-in-out;
+    }
+
+    &:after {
+      content: "";
+      border-radius: 4px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 5;
+      background-color: rgba($black,0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &:before, &:after {
+        border-radius: 4px;
+        opacity: 1;
+      }
+
+      .services-item {
+        &__img {
+          fill: $white;
+        }
+
+        &__subtitle {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-about {
+    @include flex-all-center;
+
+    padding: 85px 0;
+
+    &__subtitle {
+      margin-right: 40px;
+      font-weight: 700;
+      font-size: 28px;
+      color: $black;
+    }
+  }
 }
