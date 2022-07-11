@@ -1,0 +1,14 @@
+.portfolio {
+  padding-bottom: 120px;
+  background-color: $white;
+
+  &-head {
+    @include flex-end-between;
+
+    &__title {
+      padding-bottom: 12px;
+      line-height: 130%;
+      max-width: 710px;
+    }
+  }
+}

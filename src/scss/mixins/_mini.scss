@@ -44,6 +44,12 @@
   align-items: center;
 }
 
+@mixin flex-end-between {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 $browser-context: 16; // Default
 
 @function rem($pixels, $context: $browser-context) {
