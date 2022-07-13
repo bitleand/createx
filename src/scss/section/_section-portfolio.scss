@@ -1,5 +1,4 @@
 .portfolio {
-  padding-bottom: 120px;
   background-color: $white;
 
   &-head {
@@ -16,6 +15,10 @@
 }
 
 .project {
+  &-slider {
+    padding-bottom: 80px;
+  }
+
   &-item {
     border-radius: 4px;
   }

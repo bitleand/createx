@@ -194,7 +194,7 @@ body {
 }
 
 .section__offset {
-  padding: 120px 0 0;
+  padding: 120px 0;
 }
 
 .nav__list {
@@ -434,6 +434,24 @@ body {
   background-color: #ff5a30;
 }
 
+.about-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.about-more__subtitle {
+  margin-right: 40px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1e212c;
+}
+
 .about {
   padding-bottom: 60px;
   background-color: #ffffff;
@@ -534,6 +552,7 @@ body {
 
 .mission {
   background-color: #ffffff;
+  padding-bottom: 0;
 }
 .mission__list {
   display: -ms-grid;
@@ -678,27 +697,8 @@ body {
 .services-item:hover .services-item__subtitle {
   color: #ffffff;
 }
-.services-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 85px 0;
-}
-.services-about__subtitle {
-  margin-right: 40px;
-  font-weight: 700;
-  font-size: 28px;
-  color: #1e212c;
-}
 
 .portfolio {
-  padding-bottom: 120px;
   background-color: #ffffff;
 }
 .portfolio-head {
@@ -719,6 +719,9 @@ body {
   max-width: 710px;
 }
 
+.project-slider {
+  padding-bottom: 80px;
+}
 .project-item {
   border-radius: 4px;
 }

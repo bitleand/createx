@@ -88,17 +88,4 @@
       }
     }
   }
-
-  &-about {
-    @include flex-all-center;
-
-    padding: 85px 0;
-
-    &__subtitle {
-      margin-right: 40px;
-      font-weight: 700;
-      font-size: 28px;
-      color: $black;
-    }
-  }
 }
