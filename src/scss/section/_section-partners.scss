@@ -1,0 +1,21 @@
+.partners {
+  background-color: $grayAthens;
+  padding: 80px 0 90px;
+
+  &__list {
+    padding-top: 60px;
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    gap: 102px;
+  }
+
+  &-item {
+    &__img {
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

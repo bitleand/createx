@@ -1,0 +1,14 @@
+.testimonials {
+  &-block {
+    &__slider {
+      padding: 60px 0 120px;
+    }
+  }
+
+  &-item {
+    &__text {
+      @include text(400, 16px, $black);
+      @include lineHletterS(160%, 0);
+    }
+  }
+}

@@ -1,22 +1,24 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 html {
-  font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
+
+  box-sizing: border-box;
   height: 100%;
 }
 
 body {
   margin: 0;
   height: 100%;
-  font-size: 16px;
   min-width: 320px;
   min-height: 100%;
-
-  &.lock {
-    overflow: hidden;
-  }
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-ul, li {
+ul, li, ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,10 +42,6 @@ summary {
   display: list-item;
 }
 
-template {
-  display: none;
-}
-
 b, strong {
   font-weight: bolder;
 }
@@ -55,21 +53,23 @@ button {
   font-size: inherit;
   box-shadow: none;
   cursor: pointer;
-}
-
-button {
   border: none;
   padding: 0;
 }
 
 input {
   -webkit-appearance: none;
-  outline: none;
+
   appearance: none;
   border-radius: 0;
+  outline: none;
   border: 0;
 
-  &::-ms-clear {
+  &::-ms-clear,
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
     display: none;
   }
 }

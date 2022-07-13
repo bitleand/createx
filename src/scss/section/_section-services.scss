@@ -1,26 +1,26 @@
 .services {
-  padding-top: 212px;
   background-image: url('../img/services-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding-top: 212px;
+
+  @include bgCover;
 
   &-list {
     gap: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 0 0 80px;
 
     &__item {
+      @include border($grayAthens, solid, 4px, 1px);
+
       position: relative;
-      border: 1px solid $grayAthens;
       box-shadow: $boxShadowBlack;
       background-color: $white;
-      border-radius: 4px;
     }
   }
 
   &-item {
-    @include flex-column-center;
+    @include flexColCenter;
 
     padding: 90px 10px;
 
@@ -30,44 +30,36 @@
     }
 
     &__img {
-      width: 52px;
-      height: 52px;
-      fill: $orange;
-      object-fit: cover;
+      @include imgSprite(52px, 52px, $orange, cover);
     }
 
     &__subtitle {
+      @include text(700, 20px, $black);
+
       margin-top: 25px;
-      font-weight: 700;
-      font-size: 20px;
-      color: $black;
     }
 
     &:before {
+      @include position(0, 0, 0, 0);
+
+      z-index: 3;
+      opacity: 0;
       content: "";
       border-radius: 4px;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 3;
       background-image: url('../img/services-item-bg.jpg');
-      opacity: 0;
-      transition : opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
     }
 
     &:after {
+      @include position(0, 0, 0, 0);
+
+      z-index: 5;
+      opacity: 0;
       content: "";
       border-radius: 4px;
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 5;
       background-color: rgba($black,0.6);
-      opacity: 0;
       transition: opacity 0.3s ease-in-out;
     }
 

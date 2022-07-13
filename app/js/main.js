@@ -28,6 +28,7 @@ const bodyStyles = window.getComputedStyle(document.body);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
+  loop: true,
   navigation: {
     nextEl: '.slider-nav__btn--next',
     prevEl: '.slider-nav__btn--prev'

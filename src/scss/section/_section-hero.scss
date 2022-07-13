@@ -1,16 +1,16 @@
 .hero {
+  @include bgCover;
+
   background-image: url('../img/hero-bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   &--home {
     background-color: $gray;
   }
 
   &-content {
+    @include maxWmaxH(630px, inherit);
+
     padding-top: 217px;
-    max-width: 630px;
 
     &__title {
       &--orange {

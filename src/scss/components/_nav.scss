@@ -1,6 +1,6 @@
 .nav {
   &__list {
-    @include flex-v-center;
+    @include flexCenterV;
   }
 
   &-item {
@@ -9,9 +9,7 @@
     }
 
     &__link {
-      color: $gray;
-      font-size: 16px;
-      font-weight: 700;
+      @include text(700, 16px, $gray);
     }
   }
 }

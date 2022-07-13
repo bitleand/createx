@@ -1,12 +1,11 @@
 .about {
   &-more {
-    @include flex-all-center;
+    @include flexAllCenter;
 
     &__subtitle {
+      @include text(700, 28px, $black);
+
       margin-right: 40px;
-      font-weight: 700;
-      font-size: 28px;
-      color: $black;
     }
   }
 }

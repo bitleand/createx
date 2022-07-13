@@ -1,11 +1,9 @@
 .main {
   &-content {
     &__title {
-      color: $black;
-      font-size: 72px;
-      font-weight: 700;
-      line-height: 130%;
-      letter-spacing: 1px;
+      @include text(700, 72px, $black);
+      @include lineHletterS(130%, 1px);
+
       text-transform: uppercase;
 
       &:not(:last-child) {
@@ -18,11 +16,8 @@
     }
 
     &__text {
-      line-height: 150%;
-      font-size: 20px;
-      letter-spacing: 1px;
-      color: $grayStorm;
-      font-weight: 400;
+      @include text(400, 20px, $grayStorm);
+      @include lineHletterS(150%, 1px);
 
       &:not(:last-child) {
         margin-bottom: 60px;

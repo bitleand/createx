@@ -2,53 +2,47 @@
   background-color: $white;
 
   &-head {
-    @include flex-end-between;
+    @include flexEndBet;
 
     margin-bottom: 48px;
 
     &__title {
+      @include lineHletterS(130%, 0);
+      @include maxWmaxH(710px, inherit);
+
       padding-bottom: 12px;
-      line-height: 130%;
-      max-width: 710px;
     }
   }
 }
 
 .project {
   &-slider {
-    padding-bottom: 80px;
-  }
-
-  &-item {
-    border-radius: 4px;
+    padding: 0 2px 80px;
   }
 
   &-content {
-    @include flex-column-center;
+    @include flexColCenter;
 
     padding: 20px;
 
     &__title {
-      color: $black;
-      font-size: 20px;
-      font-weight: 700;
+      @include text(700, 20px, $black);
     }
 
     &__description {
+      @include text(400, 14px, $grayStorm);
+      @include lineHletterS(150%, 0);
+
       display: inline-block;
       margin: 10px 0 24px;
-      color: $grayStorm;
-      font-weight: 400;
-      font-size: 14px;
     }
 
     &__btn {
-      width: 100%;
-      height: 44px;
-      max-width: 172px;
+      @include wh(100%, 44px);
+      @include maxWmaxH(172px, inherit);
+      @include border($orange, solid, 4px, 1px);
+
       padding: 0 32px;
-      border: 1px solid $orange;
-      border-radius: 4px;
     }
   }
 }

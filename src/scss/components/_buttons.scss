@@ -1,20 +1,14 @@
 .btn {
+  @include border(transparent, solid, 4px, 1px);
+
   text-transform: uppercase;
-  border-color: transparent;
-  border-style: solid;
-  border-radius: 4px;
-  border-width: 1px;
 
   &__text {
-    color: $white;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    @include text(700, 16px, $white);
+    @include lineHletterS(0, 0.5px);
 
     &--orange {
-      font-weight: 700;
-      font-size: 14px;
-      color: $orange;
+      @include text(700, 14px, $orange);
     }
   }
 
