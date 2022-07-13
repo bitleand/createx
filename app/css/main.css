@@ -205,10 +205,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-.nav__item:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 40px;
 }
-.nav__link {
+.nav-item__link {
   color: #424551;
   font-size: 16px;
   font-weight: 700;
@@ -300,6 +300,11 @@ body {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
+}
+.btn__text--orange {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ff5a30;
 }
 .btn--fill {
   background-color: #ff5a30;
@@ -531,12 +536,11 @@ body {
   background-color: #ffffff;
 }
 .mission__list {
-  --mission-gap: 94px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: calc(var(--mission-gap) * 2);
+  gap: 188px;
 }
 .mission-item {
   position: relative;
@@ -549,11 +553,11 @@ body {
 .mission-item:not(:last-child):after {
   content: "";
   position: absolute;
-  right: calc(-1 * var(--mission-gap));
+  right: -94px;
   top: 0;
   width: 1px;
   height: 100%;
-  background-image: url("../img/divider.svg");
+  background-image: url("../img/mission/divider.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -573,13 +577,13 @@ body {
   color: #424551;
 }
 .mission-item--quality {
-  background-image: url("../img/quality.svg");
+  background-image: url("../img/mission/quality.svg");
 }
 .mission-item--safety {
-  background-image: url("../img/safety.svg");
+  background-image: url("../img/mission/safety.svg");
 }
 .mission-item--comfort {
-  background-image: url("../img/comfort.svg");
+  background-image: url("../img/mission/comfort.svg");
 }
 
 .services {
@@ -707,10 +711,48 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 .portfolio-head__title {
   padding-bottom: 12px;
   line-height: 130%;
   max-width: 710px;
+}
+
+.project-item {
+  border-radius: 4px;
+}
+.project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+.project-content__title {
+  color: #1e212c;
+  font-size: 20px;
+  font-weight: 700;
+}
+.project-content__description {
+  display: inline-block;
+  margin: 10px 0 24px;
+  color: #787a80;
+  font-weight: 400;
+  font-size: 14px;
+}
+.project-content__btn {
+  width: 100%;
+  height: 44px;
+  max-width: 172px;
+  padding: 0 32px;
+  border: 1px solid #ff5a30;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */

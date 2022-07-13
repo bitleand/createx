@@ -1,12 +1,12 @@
+@import '../variables';
+
 .mission {
   background-color: $white;
 
   &__list {
-    --mission-gap: 94px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: calc(var(--mission-gap) * 2);
+    gap: calc($missionGap * 2);
   }
 
   &-item {
@@ -21,11 +21,11 @@
       &:after {
         content: '';
         position: absolute;
-        right: calc((-1 * var(--mission-gap)));
+        right: calc(-1 * $missionGap);
         top: 0;
         width: 1px;
         height: 100%;
-        background-image: url('../img/divider.svg');
+        background-image: url('../img/mission/divider.svg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -50,15 +50,15 @@
     }
 
     &--quality {
-      background-image: url('../img/quality.svg');
+      background-image: url('../img/mission/quality.svg');
     }
 
     &--safety {
-      background-image: url('../img/safety.svg');
+      background-image: url('../img/mission/safety.svg');
     }
 
     &--comfort {
-      background-image: url('../img/comfort.svg');
+      background-image: url('../img/mission/comfort.svg');
     }
   }
 }
