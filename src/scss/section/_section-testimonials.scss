@@ -1,14 +1,45 @@
 .testimonials {
+  background-color: $grayAthens;
+
+  &__container {
+    @include flexStartBet;
+
+    position: relative;
+  }
+
   &-block {
-    &__slider {
-      padding: 60px 0 120px;
+    &:first-child {
+      padding: 0 15px 0 0;
+    }
+
+    &__img {
+      @include position(auto, 0, 0, 0, absolute);
+
+      padding: 0 0 20px;
     }
   }
 
-  &-item {
+  &-content {
+    @include maxWmaxH(600px, auto);
+
+    padding: 60px 0 0;
+
     &__text {
       @include text(400, 16px, $black);
       @include lineHletterS(160%, 0);
+
+      padding: 24px 0;
+    }
+
+    &__author {
+      @include text(700, 16px, $black);
+      @include flexColStart;
+
+      &--position {
+        @include text(400, 14px, $grayStorm);
+
+        padding: 8px 0 0;
+      }
     }
   }
 }

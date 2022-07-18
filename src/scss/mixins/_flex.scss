@@ -44,3 +44,9 @@
   align-items: flex-end;
   justify-content: space-between;
 }
+
+@mixin flexStartBet {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

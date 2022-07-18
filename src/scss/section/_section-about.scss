@@ -10,11 +10,10 @@
     border-radius: 4px;
 
     &::before {
-      @include position(0, 0, 0, 0);
+      @include position(0, 0, 0, 0, absolute);
 
       content: '';
       z-index: 5;
-      position: absolute;
       background-color: rgba($black, 0.6);
     }
 
@@ -25,13 +24,12 @@
     &__button {
       z-index: 10;
       border: none;
-      position: absolute;
       border-radius: 100%;
 
       &--play {
         @include flexAllCenter;
         @include wh(80px, 80px);
-        @include position(50%, 0, 0, 50%);
+        @include position(50%, 0, 0, 50%, absolute);
 
         background-color: $orange;
         transform: translate(-50%, -50%);
@@ -44,7 +42,7 @@
       &--mute {
         @include flexAllCenter;
         @include wh(40px, 40px);
-        @include position(32px, inherit, 32px, inherit);
+        @include position(32px, inherit, 32px, inherit, absolute);
 
         border-radius: 100%;
         background-color: rgba($white, 0.12);

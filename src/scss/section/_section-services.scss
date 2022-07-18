@@ -40,25 +40,23 @@
     }
 
     &:before {
-      @include position(0, 0, 0, 0);
+      @include position(0, 0, 0, 0, absolute);
 
+      content: "";
       z-index: 3;
       opacity: 0;
-      content: "";
       border-radius: 4px;
-      position: absolute;
       background-image: url('../img/services-item-bg.jpg');
       transition: opacity 0.3s ease-in-out;
     }
 
     &:after {
-      @include position(0, 0, 0, 0);
+      @include position(0, 0, 0, 0, absolute);
 
+      content: "";
       z-index: 5;
       opacity: 0;
-      content: "";
       border-radius: 4px;
-      position: absolute;
       background-color: rgba($black,0.6);
       transition: opacity 0.3s ease-in-out;
     }
