@@ -1,0 +1,37 @@
+.facts {
+  padding: 220px 0 0;
+
+  &__title {
+    padding-bottom: 60px;
+  }
+
+  &__list {
+    @include maxWmaxH(735px, auto);
+
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    display: grid;
+    gap: 48px;
+  }
+
+  &-content {
+    @include wh(148px, 148px);
+
+    position: relative;
+
+    &__value {
+      @include position(50%, auto, auto, 50%, absolute);
+      @include text(700, 32px, $black);
+
+      transform: translate(-50%, -50%);
+    }
+
+    &__text {
+      @include position(0, 0, 0, 165px, absolute);
+      @include text(400, 14px, $black);
+
+      white-space: nowrap;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.circle {
+  @include position(0, 0, 0, 0, absolute);
+
+  &__el {
+    transform: rotate(-90deg) translateX(24px);
+    transform-origin: center;
+  }
+}
+
+#circleOrange {
+  stroke: $circleStrOrange;
+}
+
+#circleBgOrange {
+  stroke: $circleStrOrange;
+  opacity: 0.3;
+}
+
+#circlePurple {
+  stroke: $circleStrPurple;
+}
+
+#circleBgPurple {
+  stroke: $circleStrOrange;
+  opacity: 0.3;
+}
+
+#circleBlue {
+  stroke: $circleStrBlue;
+}
+
+#circleBgBlue {
+  stroke: $circleStrOrange;
+  opacity: 0.3;
+}
+
+#circleGreen {
+  stroke: $circleStrGreen;
+}
+
+#circleBgGreen {
+  stroke: $circleStrOrange;
+  opacity: 0.3;
+}

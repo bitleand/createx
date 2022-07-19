@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc($missionGap * 2);
+    padding-top: 60px;
   }
 
   &-item {

@@ -8,14 +8,12 @@
 .title {
   @include text(700, 46px, $black);
 
-  margin-bottom: 25px;
-
   &--center {
     text-align: center;
   }
 
-  &--mb {
-    margin-bottom: 0;
+  &--pb {
+    padding-bottom: 24px;
   }
 }
 
@@ -23,11 +21,7 @@
   @include text(400, 18px, $grayStorm);
   @include lineHletterS(150%, 0);
 
-  margin-bottom: 60px;
-
-  &--center {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .section {
