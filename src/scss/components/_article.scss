@@ -1,0 +1,56 @@
+.article {
+  &-content {
+    box-shadow: $boxShadowBlack;
+    background-color: $white;
+    padding: 24px;
+
+    &__name {
+      @include text(700, 20px, $black);
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    &__text {
+      @include text(400, 16px, $black);
+    }
+
+    &--padding {
+      padding: 16px 24px;
+    }
+  }
+
+  &-items {
+    @include flexCenterV;
+
+    padding: 15px 0;
+
+    &__el {
+      @include text(400, 14px, $grayStorm);
+
+      position: relative;
+
+      &:not(:last-child) {
+        padding-right: 12px;
+      }
+
+      &:not(:first-child) {
+        padding-left: 12px;
+
+        &::after {
+          @include wh(1px, 12px);
+          @include position(0, 0, 0, 2px, absolute);
+
+          background-color: $grayStorm;
+        }
+      }
+    }
+
+    &--pb {
+      padding-bottom: 0;
+    }
+  }
+}

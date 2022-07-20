@@ -1,0 +1,22 @@
+.news {
+  &-list {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 30px;
+
+    &__item {
+      grid-column: 5 span;
+
+      &:first-child {
+        grid-column: 7 span;
+        grid-row: 2 span;
+      }
+    }
+
+    &__article {
+      border-radius: 4px;
+    }
+  }
+}

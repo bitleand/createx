@@ -18,12 +18,11 @@
     background-position: top center;
 
     &:not(:last-child) {
-      &:after {
+      &::after {
         @include bgCover;
         @include wh(1px, 100%);
+        @include positionStr(absolute);
 
-        content: '';
-        position: absolute;
         top: 0;
         right: calc(-1 * $missionGap);
         background-image: url('../img/mission/divider.svg');

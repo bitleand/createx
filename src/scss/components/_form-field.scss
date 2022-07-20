@@ -28,8 +28,8 @@
   }
 
   &-know {
-    top: 92px;
-    position: relative;
+    @include position(0, 0, 0, 92px, relative);
+
     padding: 48px 60px;
     box-shadow: $boxShadowBlack;
     background-color: $white;

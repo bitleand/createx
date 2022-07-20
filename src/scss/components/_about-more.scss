@@ -2,6 +2,8 @@
   &-more {
     @include flexAllCenter;
 
+    padding-top: 80px;
+
     &__subtitle {
       @include text(700, 28px, $black);
 

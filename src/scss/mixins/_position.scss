@@ -4,4 +4,10 @@
   bottom: $bottom;
   top: $top;
   position: $position;
+  content: '';
+}
+
+@mixin positionStr($position) {
+  position: $position;
+  content: '';
 }
