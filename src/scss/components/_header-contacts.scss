@@ -26,13 +26,13 @@
     &__value {
       @include text(400, 18px, $gray);
     }
-
-    &--call {
-      background-image: url('../img/iphone.svg');
-    }
-
-    &--talk {
-      background-image: url('../img/chat.svg');
-    }
   }
+}
+
+#contactImgCall {
+  background-image: url('../img/iphone.svg');
+}
+
+#contactImgTalk {
+  background-image: url('../img/chat.svg');
 }

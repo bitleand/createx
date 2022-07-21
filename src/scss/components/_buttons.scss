@@ -1,7 +1,9 @@
 .btn {
   @include border(transparent, solid, 4px, 1px);
 
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
+  padding: 16px 36px;
 
   &__text {
     @include text(700, 16px, $white);
@@ -12,23 +14,25 @@
     }
   }
 
-  &--fill {
+  &-fill {
     background-color: $orange;
-    padding: 16px 36px;
 
-    &-primary {
-      border-color: $orange;
+    &--form {
+      padding: 12px 29px;
     }
 
-    &-form {
-      padding: 12px 29px;
+    &:hover {
+      border-color: $orange;
+      background-color: transparent;
+
+      .btn-fill__text {
+        color: $orange;
+      }
     }
   }
 
-  &--stroke {
-    padding: 16px 36px;
-
-    &-white {
+  &-stroke {
+    &--white {
       border-color: $white;
     }
 

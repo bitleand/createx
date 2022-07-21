@@ -10,9 +10,9 @@
   }
 
   &-item {
-    position: relative;
-    text-align: center;
     padding-top: 70px;
+    text-align: center;
+    position: relative;
     background-size: 48px 48px;
     background-repeat: no-repeat;
     background-position: top center;
@@ -41,17 +41,35 @@
       @include text(400, 16px, $gray);
       @include lineHletterS(160%, 0);
     }
+  }
 
-    &--quality {
-      background-image: url('../img/mission/quality.svg');
+  &-form {
+    @include position(0, 0, 0, 92px, relative);
+
+    padding: 60px 60px 36px;
+
+    &__title {
+      text-align: center;
+
+      &:not(:last-child) {
+        padding-bottom: 32px;
+      }
     }
 
-    &--safety {
-      background-image: url('../img/mission/safety.svg');
-    }
-
-    &--comfort {
-      background-image: url('../img/mission/comfort.svg');
+    &__content {
+      @include flexEnd;
     }
   }
+}
+
+#missionImgQuality {
+  background-image: url('../img/mission/quality.svg');
+}
+
+#missionImgSafety {
+  background-image: url('../img/mission/safety.svg');
+}
+
+#missionImgComfort {
+  background-image: url('../img/mission/comfort.svg');
 }

@@ -14,35 +14,3 @@
     }
   }
 }
-
-.project {
-  &-slider {
-    padding: 0 2px;
-  }
-
-  &-content {
-    @include flexColCenter;
-
-    padding: 20px;
-
-    &__title {
-      @include text(700, 20px, $black);
-    }
-
-    &__description {
-      @include text(400, 14px, $grayStorm);
-      @include lineHletterS(150%, 0);
-
-      display: inline-block;
-      margin: 10px 0 24px;
-    }
-
-    &__btn {
-      @include wh(100%, 44px);
-      @include maxWmaxH(172px, inherit);
-      @include border($orange, solid, 4px, 1px);
-
-      padding: 0 32px;
-    }
-  }
-}
