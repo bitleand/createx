@@ -1,0 +1,23 @@
+.contact {
+  @include bgCover;
+
+  background-color: $white;
+  background-image: url('../img/bg/contact-bg.jpg');
+
+  &__container {
+    @include flexJustifyEnd;
+
+    padding: 80px 0;
+  }
+
+  &-form {
+    @include maxWmaxH(495px, fit-content);
+
+    box-shadow: $boxShadowContact;
+    padding: 48px 40px;
+
+    &__btn {
+      @include flexCenterH;
+    }
+  }
+}

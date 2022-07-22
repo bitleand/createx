@@ -21,6 +21,10 @@
       padding: 12px 29px;
     }
 
+    &--center {
+      text-align: center;
+    }
+
     &:hover {
       border-color: $orange;
       background-color: transparent;

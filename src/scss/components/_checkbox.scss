@@ -1,0 +1,45 @@
+.checkbox {
+  position: relative;
+  display: flex;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    @include flexCenterV;
+    @include text(400, 14px, $black);
+    @include lineHletterS(150%, auto);
+
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    margin-left: 30px;
+
+    &::before {
+      @include wh(16px, 16px);
+      @include border($orange, solid, 3px, 1px);
+      @include position(0, 0, 0, 2px, absolute);
+    }
+
+    &::after {
+      @include bgCover;
+      @include wh(10px, 8px);
+      @include position(4px, 0, 0, 7px, absolute);
+
+      opacity: 0;
+      background-image: url('../img/check.svg');
+    }
+  }
+
+  &__input:checked + &__text::before {
+    background-color: $orange;
+  }
+
+  &__input:checked + &__text::after {
+    opacity: 1;
+  }
+}

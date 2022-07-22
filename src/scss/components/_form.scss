@@ -6,8 +6,22 @@
     @include text(700, 28px, $black);
   }
 
+  &__content {
+    &--row {
+      @include flexEnd;
+    }
+
+    &--column {
+      padding: 24px 0;
+    }
+  }
+
   &-field {
     @include flexColStart;
+
+    &--mb {
+      margin-bottom: 20px;
+    }
 
     &__caption {
       @include text(400, 14px, $gray);
@@ -19,15 +33,31 @@
 
     &__input {
       @include border($borderFormField, solid, 4px, 1px);
-      @include maxWmaxH(246px, 44px);
+      @include text(400, 14px, $placeholderColor);
+      @include maxWmaxH(245px, 44px);
       @include wh(100vh, 100vh);
 
-      margin-right: 24px;
+      background-color: $bgInputColor;
       padding: 0 15px;
 
-      &--big {
-        @include maxWmaxH(399px, 44px);
+      &--mr {
+        margin-right: 24px;
       }
+
+      &--big {
+        @include maxWmaxH(414px, 44px);
+      }
+    }
+
+    &__textarea {
+      @include border($borderFormField, solid, 4px, 1px);
+      @include text(400, 14px, $placeholderColor);
+      @include maxWmaxH(414px, fit-content);
+      @include minWminH(414px, 66px);
+      @include wh(100%, 66px);
+
+      background-color: $bgInputColor;
+      padding: 15px;
     }
   }
 }

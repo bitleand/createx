@@ -1,7 +1,7 @@
 .hero {
   @include bgCover;
 
-  background-image: url('../img/hero-bg.jpg');
+  background-image: url('../img/bg/hero-bg.jpg');
 
   &--home {
     background-color: $gray;
