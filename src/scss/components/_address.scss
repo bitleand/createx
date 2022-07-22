@@ -1,0 +1,19 @@
+.address {
+  &-item {
+    padding-bottom: 5px;
+
+    &__subtitle {
+      @include text(400, 16px, $white);
+    }
+
+    &__link {
+      @include text(400, 16px, $white);
+
+      opacity: 0.6;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

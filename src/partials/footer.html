@@ -1,3 +1,22 @@
 <footer class="footer">
-  <div class="footer__container"></div>
+  <div class="footer__container">`
+    <div class="footer-block">
+      <div class="footer-content social">
+        @include('component-social.html')
+      </div>
+      <form action="#" class="footer-content connection-form">
+        @include('component-connection.html')
+      </form>
+    </div>
+    <div class="footer-block">
+      @include('component-address.html')
+    </div>
+    <small class="footer-content footer-copyright">
+      © All rights reserved. Made with
+      <svg class="footer-content__img footer-copyright__img">
+        <use xlink:href="img/sprite.svg#heart"></use>
+      </svg>
+      by Createx Studio
+    </small>
+  </div>
 </footer>

@@ -1,0 +1,53 @@
+.footer {
+  padding: 80px 0;
+  background-color: $black;
+
+  &-block {
+    display: flex;
+
+    &:nth-child(1) {
+      justify-content: space-between;
+      padding-bottom: 49px;
+    }
+
+    &:nth-child(2) {
+      @include maxWmaxH(832px, auto);
+
+      justify-content: space-between;
+      padding-bottom: 38px;
+    }
+  }
+
+  &-content {
+    &__subtitle {
+      @include text(700, 16px, $white);
+
+      text-transform: uppercase;
+      padding-bottom: 13px;
+    }
+
+    &__description {
+      @include lineHletterS(150%, auto);
+      @include text(400, 14px, $white);
+      @include maxWmaxH(495px, auto);
+      @include wh(100%, auto);
+
+      opacity: 0.6;
+
+      &--info {
+        padding-top: 16px;
+      }
+    }
+
+    &__img {
+      @include imgSprite(16px, 16px, $orange, object-fit);
+
+      margin: 0 4px;
+    }
+  }
+
+  &-copyright {
+    @include text(400, 12px, $white);
+    @include flexCenterV;
+  }
+}

@@ -1,0 +1,32 @@
+.social {
+  padding-right: 15px;
+
+  &__list {
+    @include wh(100%, auto);
+    @include flexCenterV;
+
+    padding-bottom: 24px;
+  }
+
+  &-item {
+    transition: all 0.3s ease-in-out;
+
+    &__img {
+      @include imgSprite(24px, 24px, $white, object-fit);
+    }
+
+    &:hover {
+      &:not(:first-child) {
+        transform: scale(1.2);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+}
