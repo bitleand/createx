@@ -1,10 +1,10 @@
 .news {
   &-list {
-    padding-top: 60px;
-    display: grid;
+    @include grid($newsGap);
+
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2);
-    gap: 30px;
+    padding-top: 60px;
 
     &__item {
       grid-column: 5 span;

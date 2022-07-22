@@ -10,6 +10,10 @@
 
     &__link {
       @include text(700, 16px, $gray);
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

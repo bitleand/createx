@@ -6,12 +6,12 @@
 
 .contacts {
   &-link {
+    @include flexColStart;
+
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 40px 40px;
     padding-left: 52px;
-
-    @include flexColStart;
 
     &:not(:last-child) {
       margin-right: 35px;

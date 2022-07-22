@@ -50,7 +50,9 @@
 
       &--connect {
         @include border($inputFooter, solid, auto, 1px);
+        @include maxWmaxH(364px, auto);
 
+        max-width: 364px;
         background-color: rgba(255, 255, 255, 0.12);
         border-radius: 4px 0 0 4px;
         border-right: none;

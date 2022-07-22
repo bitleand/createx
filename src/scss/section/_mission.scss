@@ -3,15 +3,15 @@
   padding-bottom: 0;
 
   &__list {
-    display: grid;
+    @include grid(calc($missionGap * 2));
+
     grid-template-columns: repeat(3, 1fr);
-    gap: calc($missionGap * 2);
     padding-top: 60px;
   }
 
   &-item {
-    padding-top: 70px;
     text-align: center;
+    padding-top: 70px;
     position: relative;
     background-size: 48px 48px;
     background-repeat: no-repeat;
@@ -21,10 +21,8 @@
       &::after {
         @include bgCover;
         @include wh(1px, 100%);
-        @include positionStr(absolute);
+        @include position(auto, calc(-1 * $missionGap), 0, auto, absolute);
 
-        top: 0;
-        right: calc(-1 * $missionGap);
         background-image: url('../img/mission/divider.svg');
       }
     }

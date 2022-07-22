@@ -6,12 +6,11 @@
   }
 
   &__list {
+    @include grid($factsGap);
     @include maxWmaxH(735px, auto);
 
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
-    display: grid;
-    gap: 48px;
   }
 
   &-content {

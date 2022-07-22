@@ -3,10 +3,10 @@
   padding: 80px 0 50px;
 
   &__list {
-    padding-top: 60px;
+    @include grid($partnersGap);
+
     grid-template-columns: repeat(5, 1fr);
-    display: grid;
-    gap: 102px;
+    padding-top: 60px;
   }
 
   &-item {

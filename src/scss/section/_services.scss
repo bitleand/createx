@@ -5,8 +5,8 @@
   @include bgCover;
 
   &-list {
-    gap: 30px;
-    display: grid;
+    @include grid(30px);
+
     grid-template-columns: repeat(4, 1fr);
     padding: 60px 0 0;
 
@@ -38,7 +38,11 @@
 
       margin-top: 25px;
     }
+  }
+}
 
+.services {
+  &-item {
     &:before {
       @include position(0, 0, 0, 0, absolute);
 
@@ -55,7 +59,7 @@
       z-index: 5;
       opacity: 0;
       border-radius: 4px;
-      background-color: rgba($black,0.6);
+      background-color: rgba($black, 0.6);
       transition: opacity 0.3s ease-in-out;
     }
 

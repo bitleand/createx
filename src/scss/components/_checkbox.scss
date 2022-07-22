@@ -28,7 +28,7 @@
     &::after {
       @include bgCover;
       @include wh(10px, 8px);
-      @include position(4px, 0, 0, 7px, absolute);
+      @include position(3px, 0, 0, 6px, absolute);
 
       opacity: 0;
       background-image: url('../img/check.svg');

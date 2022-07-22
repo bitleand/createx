@@ -62,6 +62,7 @@
 }
 .footer-content__description--info {
   padding-top: 16px;
+  font-size: 12px;
 }
 .footer-content__img {
   width: 16px;
@@ -259,6 +260,9 @@ a {
   font-size: 16px;
   color: #424551;
 }
+.nav-item__link:hover {
+  text-decoration: underline;
+}
 
 .header-contacts {
   display: -webkit-box;
@@ -270,10 +274,6 @@ a {
 }
 
 .contacts-link {
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 40px 40px;
-  padding-left: 52px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,6 +284,10 @@ a {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  padding-left: 52px;
 }
 .contacts-link:not(:last-child) {
   margin-right: 35px;
@@ -452,6 +456,9 @@ a {
   border-style: solid;
   border-radius: auto;
   border-width: 1px;
+  max-width: 364px;
+  max-height: auto;
+  max-width: 364px;
   background-color: rgba(255, 255, 255, 0.12);
   border-radius: 4px 0 0 4px;
   border-right: none;
@@ -745,10 +752,10 @@ a {
   background-repeat: no-repeat;
   width: 10px;
   height: 8px;
-  left: 4px;
+  left: 3px;
   right: 0;
   bottom: 0;
-  top: 7px;
+  top: 6px;
   position: absolute;
   content: "";
   opacity: 0;
@@ -848,16 +855,6 @@ a {
   position: relative;
   overflow: hidden;
 }
-.about-group::before {
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  position: absolute;
-  content: "";
-  z-index: 5;
-  background-color: rgba(30, 33, 44, 0.6);
-}
 .about-group__video {
   -o-object-fit: cover;
   object-fit: cover;
@@ -910,15 +907,12 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
   left: 32px;
   right: inherit;
   bottom: 32px;
   top: inherit;
   position: absolute;
   content: "";
-  border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.12);
 }
 .about-group__button--mute-img {
@@ -927,6 +921,17 @@ a {
   fill: #ffffff;
   -o-object-fit: none;
   object-fit: none;
+}
+
+.about-group::before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  content: "";
+  z-index: 5;
+  background-color: rgba(30, 33, 44, 0.6);
 }
 
 .hero {
@@ -952,16 +957,16 @@ a {
   padding-bottom: 0;
 }
 .mission__list {
+  gap: 188px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: 188px;
   padding-top: 60px;
 }
 .mission-item {
-  padding-top: 70px;
   text-align: center;
+  padding-top: 70px;
   position: relative;
   background-size: 48px 48px;
   background-repeat: no-repeat;
@@ -973,10 +978,12 @@ a {
   background-repeat: no-repeat;
   width: 1px;
   height: 100%;
+  left: auto;
+  right: -94px;
+  bottom: 0;
+  top: auto;
   position: absolute;
   content: "";
-  top: 0;
-  right: -94px;
   background-image: url("../img/mission/divider.svg");
 }
 .mission-item__subtitle {
@@ -1077,6 +1084,7 @@ a {
   color: #1e212c;
   margin-top: 25px;
 }
+
 .services-item:before {
   left: 0;
   right: 0;
@@ -1146,12 +1154,12 @@ a {
   padding: 80px 0 50px;
 }
 .partners__list {
-  padding-top: 60px;
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
+  gap: 102px;
   display: -ms-grid;
   display: grid;
-  gap: 102px;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 60px;
 }
 .partners-item__img {
   -webkit-transition: 0.5s;
@@ -1233,14 +1241,14 @@ a {
   padding-bottom: 60px;
 }
 .facts__list {
+  gap: 48px;
+  display: -ms-grid;
+  display: grid;
   max-width: 735px;
   max-height: auto;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  gap: 48px;
 }
 .facts-content {
   width: 148px;
@@ -1276,14 +1284,14 @@ a {
 }
 
 .news-list {
-  padding-top: 60px;
+  gap: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
   grid-template-columns: repeat(12, 1fr);
   -ms-grid-rows: ()[2];
   grid-template-rows: repeat(2);
-  gap: 30px;
+  padding-top: 60px;
 }
 .news-list__item {
   -ms-grid-column-span: 5;
@@ -1313,7 +1321,7 @@ a {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 80px 0;
+  padding: 80px 15px;
 }
 .contact-form {
   max-width: 495px;
